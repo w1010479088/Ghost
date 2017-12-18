@@ -1,17 +1,17 @@
 ext {
 
     android = [
-            compileSdkVersion: 24,
-            buildToolsVersion: '24.0.1',
+            compileSdkVersion: 27,
+            buildToolsVersion: '27.0.2',
             applicationId    : "com.zcy.ghost.vivideo",
             minSdkVersion    : 17,
-            targetSdkVersion : 24,
+            targetSdkVersion : 27,
             versionCode      : 1,
             versionName      : "1.3.0"
     ]
 
     def dependVersion = [
-            support    : "24.0.0",
+            support    : "27.0.2",
             retrofit   : "2.1.0",
             okhttp     : "3.3.1",
             dagger2    : "2.0.2",
@@ -31,6 +31,7 @@ ext {
             "rollviewpager"                  : "com.jude:rollviewpager:1.4.5",
             "glide"                          : "com.github.bumptech.glide:glide:3.7.0",
             "glide-transformations"          : "jp.wasabeef:glide-transformations:2.0.1",
+            "glide-okhttp3-integration"      : "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar",
             "smarttablayout"                 : "com.ogaclejapan.smarttablayout:library:1.6.1@aar",
             "smarttablayout:utils"           : "com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar",
             "jiecaovideoplayer"              : "fm.jiecao:jiecaovideoplayer:4.8.2",
@@ -55,8 +56,6 @@ ext {
             "retrofit-adapter-rxjava"       : "com.squareup.retrofit2:adapter-rxjava:${dependVersion.retrofit}",
             "okhttp"                         : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp}",
             "okhttp-logging-interceptor"     : "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttp}",
-            "glide"                          : "com.github.bumptech.glide:glide:3.7.0",
-            "glide-okhttp3-integration"      : "com.github.bumptech.glide:okhttp3-integration:1.4.0@aar",
             "jsoup"                          : "org.jsoup:jsoup:1.10.1",
 
             //di
@@ -65,12 +64,12 @@ ext {
             "butterknife"                    : "com.jakewharton:butterknife:${dependVersion.butterknife}",
             "butterknife-compiler"           : "com.jakewharton:butterknife-compiler:${dependVersion.butterknife}",
             "annotation"                     : "org.glassfish:javax.annotation:10.0-b28",
+            "annotations"                    : "org.jetbrains:annotations-java5:15.0",
 
             //other
             "logger"                         : "com.orhanobut:logger:1.15",
             "fragmentation"                  : "me.yokeyword:fragmentation:0.7.10",
             "androideventbus"                : "org.simple:androideventbus:1.0.5.1",
-            "annotations"                    : "org.jetbrains:annotations-java5:15.0",
             "pgyersdk"                       : "com.pgyersdk:sdk:2.4.0",
             "slf4j"                          : "org.slf4j:slf4j-api:1.7.12",
 
